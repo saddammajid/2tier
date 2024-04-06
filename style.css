@@ -1,0 +1,98 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eeeeee;
+    line-height: 1.5;
+    color: #333;
+    padding: 10px;
+}
+
+/* Container for Content */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(45deg, #6D5ACF 30%, #25A18E 90%);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4em;
+}
+
+/* Section Styles */
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 4px solid #25A18E;
+}
+
+.section:hover {
+    background-color: #f5f5f5;
+    border-left: 4px solid #6D5ACF;
+}
+
+.section h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* List and List Item Styles */
+ul {
+    padding: 0;
+    list-style: circle inside;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Visitor Count Styles */
+#visitorCount {
+    background-color: #6D5ACF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 8px;
+}

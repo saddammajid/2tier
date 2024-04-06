@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saddam Majid's Resume</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Saddam Majid</h1>
+            
+        </div>
+    </header>
+  
+  </section>
+
+        </section>
+    <div class="container">
+        <!-- Personal Profile -->
+        <div class="section">
+            <h2>Personal Profile</h2>
+            <p>I am a dedicated resourceful and self-motivated individual. I focus on resolving problems and troubleshooting issues and can work independently and in team environments.
+        </div>
+
+        <!-- Skills and Experience -->
+        <div class="section">
+            <h2>Relevant Skills and Experience</h2>
+            <ul>
+                <li>Strong problem-solving skillsand ability to troubleshoot technical issues.
+   <li>    
+Excellent communication skills, both written and verbal.
+Strong time management skills and ability to prioritize tasks effectively.
+     <li>
+Experience in AWS Resources like EC2, S3, EBS, VPC, ELB, AMI, SNS, RDS, IAM, Auto scaling, Cloud Formation, Cloud Watch, Security Groups.
+       <li>
+Experience in using Tomcat web servers for deployments and for hosting tools.<li>
+Knowledge with Amazon AWS cloud creating EC2 instances, security groups, EC2 container services and Amazon elastic block store.<li>
+Knowledge on Open-Source technologies like Terraform to create infrastructure as code and raised bugs with Terraform.<li>
+Knowledge of DynamoDB, MySQL and MongoDB.<li>
+Experience in Unix/Linux and System Builds, Server Builds, Installations, Upgrades, Migration, and Troubleshooting on AWS and Remote/Physical servers.<li>
+Experience in creating IAM policies, Roles and user management for delegated access within AWS.<li>
+Experience in Cloud automation using Terraform and AWS CloudFormation templates to create custom-sized VPC, subnets, NAT, EC2 instances, ELB and Security groups and other AWS resources or architecture.<li>
+Strong experience in creating, configuring, and using S3 buckets for multiple use-cases ranging from Kubernetes application objects to storage solutions.
+            </ul>
+        </div>
+
+        <h2>Qualification and Education</h2>
+  
+Bachelor of Electronics and Electrical Engineering
+      
+        </div>
+  
+        <h2>Skills and Knowledge</h2>
+  
+Cloud Technologies: AWS
+Version Control Tools: GIT, GitHub, Bitbucket
+Web Application Servers: Apache, Nginx, Apache Tomcat.
+Monitoring Tools: Grafana, CloudWatch agent
+Database: DynamoDB, MySQL, and MongoDB
+Scripting Languages: Shell, JSON, PowerShell & Bash.
+IaC Tools: Terraform, ARM Templates
+Programming Languages: Python (Beginner level)
+Operating Systems: Linux, Ubuntu, and Windows.
+      </div>
+<h2>Employment History</h2>
+Australian Unity (current)
+<p>Team Member at Red Energy (2018-2022)
+      </div>
+<h2>Certifications</h2>
+Technical support by Google.
+<p>AWS Certified Solutions Architect 
+
+    <!-- Visitor Count Display -->
+        <div id="visitorCount">Visitor Count: Loading...</div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Saddam Majid</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for fetching and displaying visitor count -->
+    <script>
+        window.onload = function() {
+            fetch('https://cqypt032g9.execute-api.us-east-1.amazonaws.com/prod/visitorcount1', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('visitorCount').innerText = 'Visitor Count: ' + data.count;
+            })
+            .catch(error => console.error('Error:', error));
+        };
+    </script>
+</body>
+</html>
